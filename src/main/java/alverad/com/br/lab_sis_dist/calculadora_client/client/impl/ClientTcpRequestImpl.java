@@ -1,4 +1,4 @@
-package alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.impl;
+package alverad.com.br.lab_sis_dist.calculadora_client.client.impl;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -11,13 +11,13 @@ import org.modelmapper.ModelMapper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.ClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.config.ConfigClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.request.TcpRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.client.ClientRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.config.ConfigClientRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.request.TcpRequest;
 
-public class ClientRequestImpl implements ClientRequest {
+public class ClientTcpRequestImpl implements ClientRequest {
 
-    private static ClientRequestImpl clientRequestImpl;
+    private static ClientTcpRequestImpl clientTcpRequestImpl;
 
     private ObjectMapper objectMapper;
 
@@ -25,15 +25,15 @@ public class ClientRequestImpl implements ClientRequest {
 
     private ModelMapper mapper;
 
-    private ClientRequestImpl() {
+    private ClientTcpRequestImpl() {
     }
 
-    public static synchronized ClientRequestImpl getInstance() {
-        if (clientRequestImpl == null) {
-            clientRequestImpl = new ClientRequestImpl();
+    public static synchronized ClientTcpRequestImpl getInstance() {
+        if (clientTcpRequestImpl == null) {
+            clientTcpRequestImpl = new ClientTcpRequestImpl();
         }
 
-        return clientRequestImpl;
+        return clientTcpRequestImpl;
     }
 
     @Override

@@ -1,8 +1,8 @@
-package alverad.com.br.lab_sis_dist.tcp.calculadora_server;
+package alverad.com.br.lab_sis_dist.calculadora_server;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.dto.TwoValues;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.request.TcpRequest;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.request.TwoValuesRequest;
+import alverad.com.br.lab_sis_dist.calculadora_server.dto.TwoValues;
+import alverad.com.br.lab_sis_dist.calculadora_server.request.TcpRequest;
+import alverad.com.br.lab_sis_dist.calculadora_server.request.TwoValuesRequest;
 
 public class ServerFunctions {
 

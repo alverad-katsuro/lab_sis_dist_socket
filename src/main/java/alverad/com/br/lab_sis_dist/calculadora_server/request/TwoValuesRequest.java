@@ -1,7 +1,7 @@
-package alverad.com.br.lab_sis_dist.tcp.calculadora_client.request;
+package alverad.com.br.lab_sis_dist.calculadora_server.request;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.enumeration.FuncoesAvaliable;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.dto.TwoValues;
+import alverad.com.br.lab_sis_dist.calculadora_server.dto.TwoValues;
+import alverad.com.br.lab_sis_dist.calculadora_server.enumeration.FuncoesAvaliable;
 
 public class TwoValuesRequest implements TcpRequest<TwoValues> {
 
@@ -30,7 +30,6 @@ public class TwoValuesRequest implements TcpRequest<TwoValues> {
     public void setData(TwoValues data) {
         this.data = data;
     }
-
 
     public void setMethod(FuncoesAvaliable method) {
         this.method = method;

@@ -1,20 +1,21 @@
-package alverad.com.br.lab_sis_dist.tcp;
+package alverad.com.br.lab_sis_dist;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
 
 import javax.swing.JOptionPane;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.ClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.impl.ClientRequestImpl;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.config.ConfigClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.functions.CalculateClient;
+import alverad.com.br.lab_sis_dist.calculadora_client.client.ClientRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.client.impl.ClientTcpRequestImpl;
+import alverad.com.br.lab_sis_dist.calculadora_client.config.ConfigClientRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.functions.CalculateClient;
 
 public class TCPClientExample {
 
     public static void main(String[] args) throws UnknownHostException, IOException {
         final ConfigClientRequest config = new ConfigClientRequest("localhost", 6789);
-        final ClientRequest clientRequest = ClientRequestImpl.getInstance();
+        // Aqui mudei a implementação da interface de UDP para TCP
+        final ClientRequest clientRequest = ClientTcpRequestImpl.getInstance();
         clientRequest.init(config);
 
         final CalculateClient calculateClient = new CalculateClient(clientRequest);
@@ -24,7 +25,6 @@ public class TCPClientExample {
 
         Integer resultado2 = calculateClient.subtracao(10, 20);
         JOptionPane.showMessageDialog(null, String.format("O resultado da subtracao é = %d", resultado2));
-
 
         Integer resultado3 = calculateClient.multiplicacao(10, 20);
         JOptionPane.showMessageDialog(null, String.format("O resultado da multiplicacao é = %d", resultado3));

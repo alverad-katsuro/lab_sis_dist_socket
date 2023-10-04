@@ -1,4 +1,4 @@
-package alverad.com.br.lab_sis_dist.tcp;
+package alverad.com.br.lab_sis_dist;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -8,8 +8,8 @@ import java.net.Socket;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.ServerFunctions;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.request.TwoValuesRequest;
+import alverad.com.br.lab_sis_dist.calculadora_server.ServerFunctions;
+import alverad.com.br.lab_sis_dist.calculadora_server.request.TwoValuesRequest;
 
 class TCPServerExample {
 
@@ -19,10 +19,10 @@ class TCPServerExample {
 
         String clientSentence;
 
-        ServerSocket welcomeSocket = new ServerSocket(6789);
+        ServerSocket sockettt = new ServerSocket(6789);
 
         while (true) {
-            Socket connectionSocket = welcomeSocket.accept();
+            Socket connectionSocket = sockettt.accept();
             BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
             DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
             clientSentence = inFromClient.readLine();

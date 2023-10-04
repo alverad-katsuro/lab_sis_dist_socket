@@ -1,12 +1,12 @@
-package alverad.com.br.lab_sis_dist.tcp.calculadora_client.functions;
+package alverad.com.br.lab_sis_dist.calculadora_client.functions;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.ClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.enumeration.FuncoesAvaliable;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.dto.TwoValues;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_client.request.TwoValuesRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.client.ClientRequest;
+import alverad.com.br.lab_sis_dist.calculadora_client.client.enumeration.FuncoesAvaliable;
+import alverad.com.br.lab_sis_dist.calculadora_client.dto.TwoValues;
+import alverad.com.br.lab_sis_dist.calculadora_client.request.TwoValuesRequest;
 
 public class CalculateClient {
 

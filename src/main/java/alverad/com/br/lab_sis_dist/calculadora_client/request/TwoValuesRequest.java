@@ -1,7 +1,7 @@
-package alverad.com.br.lab_sis_dist.tcp.calculadora_server.request;
+package alverad.com.br.lab_sis_dist.calculadora_client.request;
 
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.dto.TwoValues;
-import alverad.com.br.lab_sis_dist.tcp.calculadora_server.enumeration.FuncoesAvaliable;
+import alverad.com.br.lab_sis_dist.calculadora_client.client.enumeration.FuncoesAvaliable;
+import alverad.com.br.lab_sis_dist.calculadora_client.dto.TwoValues;
 
 public class TwoValuesRequest implements TcpRequest<TwoValues> {
 

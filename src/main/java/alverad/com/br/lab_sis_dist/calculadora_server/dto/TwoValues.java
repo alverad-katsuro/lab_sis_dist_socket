@@ -1,4 +1,4 @@
-package alverad.com.br.lab_sis_dist.tcp.calculadora_server.dto;
+package alverad.com.br.lab_sis_dist.calculadora_server.dto;
 
 public class TwoValues {
 
@@ -29,7 +29,5 @@ public class TwoValues {
     public void setY(Integer y) {
         this.y = y;
     }
-
-
 
 }
