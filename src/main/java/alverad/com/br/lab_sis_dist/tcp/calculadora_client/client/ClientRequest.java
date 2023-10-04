@@ -1,10 +1,10 @@
-package alverad.com.br.lab_sis_dist.tcp.alguma_bib.client;
+package alverad.com.br.lab_sis_dist.tcp.calculadora_client.client;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
 
-import alverad.com.br.lab_sis_dist.tcp.alguma_bib.config.ConfigClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.alguma_bib.request.TcpRequest;
+import alverad.com.br.lab_sis_dist.tcp.calculadora_client.config.ConfigClientRequest;
+import alverad.com.br.lab_sis_dist.tcp.calculadora_client.request.TcpRequest;
 
 public interface ClientRequest {
 

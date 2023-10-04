@@ -1,4 +1,4 @@
-package alverad.com.br.lab_sis_dist.tcp.alguma_bib.client.impl;
+package alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.impl;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -11,9 +11,9 @@ import org.modelmapper.ModelMapper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import alverad.com.br.lab_sis_dist.tcp.alguma_bib.client.ClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.alguma_bib.config.ConfigClientRequest;
-import alverad.com.br.lab_sis_dist.tcp.alguma_bib.request.TcpRequest;
+import alverad.com.br.lab_sis_dist.tcp.calculadora_client.client.ClientRequest;
+import alverad.com.br.lab_sis_dist.tcp.calculadora_client.config.ConfigClientRequest;
+import alverad.com.br.lab_sis_dist.tcp.calculadora_client.request.TcpRequest;
 
 public class ClientRequestImpl implements ClientRequest {
 

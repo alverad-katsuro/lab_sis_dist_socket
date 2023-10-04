@@ -1,4 +1,4 @@
-package alverad.com.br.lab_sis_dist.tcp.alguma_bib.dto;
+package alverad.com.br.lab_sis_dist.tcp.calculadora_client.dto;
 
 public class TwoValues {
 
